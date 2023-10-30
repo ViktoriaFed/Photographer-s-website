@@ -1,0 +1,85 @@
+.container {
+  background-color: rgb(46, 46, 46);
+  color: white;
+}
+.container .content {
+  margin-top: 4rem;
+}
+.container .content h2 {
+  color: black;
+  background-color: #CC005F;
+  text-align: center;
+  padding: 1rem 0;
+  letter-spacing: 3px;
+  line-height: 2;
+}
+.container .content .firstSection {
+  margin: 5rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.container .content .firstSection img {
+  width: 30rem;
+  height: 700px;
+  border-radius: 1.5rem;
+}
+.container .content .firstSection .firstText {
+  text-align: start;
+  width: 40vw;
+  letter-spacing: 3px;
+  line-height: 2;
+  font-size: large;
+}
+.container .content .firstSection .firstText h3 {
+  margin-bottom: 30px;
+  color: #CC005F;
+}
+.container .content .secondSection {
+  margin: 5rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.container .content .secondSection img {
+  width: 45rem;
+  height: 500px;
+  border-radius: 1.5rem;
+}
+.container .content .secondSection .secondText {
+  text-align: start;
+  width: 40vw;
+  letter-spacing: 3px;
+  line-height: 2;
+  font-size: large;
+}
+.container .content .secondSection .secondText h3 {
+  margin-bottom: 30px;
+  color: #CC005F;
+}
+.container .content .thirdSection {
+  margin: 5rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+  gap: 5rem;
+}
+.container .content .thirdSection img {
+  width: 45rem;
+  height: 500px;
+  border-radius: 1.5rem;
+}
+.container .content .thirdSection .thirdText {
+  text-align: start;
+  width: 40vw;
+  letter-spacing: 3px;
+  line-height: 2;
+  font-size: large;
+}
+.container .content .thirdSection .thirdText h3 {
+  margin-bottom: 30px;
+  color: #CC005F;
+}/*# sourceMappingURL=about.component.css.map */

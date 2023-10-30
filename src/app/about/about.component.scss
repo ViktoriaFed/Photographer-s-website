@@ -1,0 +1,126 @@
+
+.container {
+    background-color: rgb(46, 46, 46);
+    color: white;
+
+    .content {
+        margin-top: 4rem;
+
+        h2 {
+            color: black;
+            background-color: #CC005F;
+            text-align: center;
+            padding: 1rem 0;
+            letter-spacing: 3px;
+            line-height: 2;
+        }
+
+        .firstSection {
+            margin: 5rem 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5rem;
+
+            img {
+                width: 30rem;
+                height: 700px;
+                border-radius: 1.5rem;
+            }
+
+            .firstText {
+                text-align: start;
+                width: 40vw;
+                letter-spacing: 3px;
+                line-height: 2;
+                font-size: large;
+
+                h3 {
+                    margin-bottom: 30px;
+                    color: #CC005F;
+                }
+            }
+        }
+
+        .secondSection {
+            margin: 5rem 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5rem;
+
+            img {
+                width: 45rem;
+                height: 500px;
+                border-radius: 1.5rem;
+            }
+
+            .secondText {
+                text-align: start;
+                width: 40vw;
+                letter-spacing: 3px;
+                line-height: 2;
+                font-size: large;
+
+                h3 {
+                    margin-bottom: 30px;
+                    color: #CC005F;
+                }
+            }
+        }
+
+        .thirdSection {
+            margin: 5rem 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 5rem;
+            gap: 5rem;
+
+            img {
+                width: 45rem;
+                height: 500px;
+                border-radius: 1.5rem;
+            }
+
+            .thirdText {
+                text-align: start;
+                width: 40vw;
+                letter-spacing: 3px;
+                line-height: 2;
+                font-size: large;
+
+                h3 {
+                    margin-bottom: 30px;
+                    color: #CC005F;
+                }
+            }
+        } 
+
+        // .info {
+        //     margin: 5rem 3rem;
+
+        //     h3 {
+        //         background-color: #CC005F;
+        //         color: black;
+        //         text-align: start;
+        //         padding: 1rem 2rem;
+        //         letter-spacing: 3px;
+        //         line-height: 1.2;
+        //         width: fit-content;
+        //         margin-bottom: 20px;
+        //     }
+
+        //     p {
+        //         text-align: start;
+        //         padding-left: 2rem;
+        //         letter-spacing: 3px;
+        //         color: #CC005F;
+        //     }
+
+        //     .last {
+        //         padding-bottom: 2rem;
+        //     }
+        // }
+    }
+}
