@@ -1,1 +1,78 @@
-/*# sourceMappingURL=reviews.component.css.map */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 3rem 0;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  overflow: hidden;
+  margin: 0;
+}
+.body .content {
+  display: flex;
+  width: 90vw;
+}
+.body .content .panel {
+  background-size: auto 70vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+.body .content .panel h3 {
+  font-size: 24px;
+  width: 30%;
+  position: absolute;
+  bottom: 4rem;
+  left: 2rem;
+  margin: 0;
+  opacity: 0;
+}
+.body .content .panel p {
+  width: 50%;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 2rem;
+  margin: 0;
+  opacity: 0;
+}
+.body .content .panel.activeClass {
+  flex: 5;
+}
+.body .content .panel.activeClass h3, .body .content .panel.activeClass p {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+.clients {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.clients div {
+  padding: 3rem 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.clients div ul {
+  list-style: none;
+}
+.clients div:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.7607843137);
+}
+.clients div:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.337254902);
+}/*# sourceMappingURL=reviews.component.css.map */
