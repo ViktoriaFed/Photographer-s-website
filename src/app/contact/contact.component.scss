@@ -1,19 +1,26 @@
+
 body{
 
-    background-color: black;
-height: 150vh;
-padding: 50px;
-
+    background-color: rgb(46, 46,46);
+height: 180vh;
+// padding: 10px;
+// position: absolute;
+// width: 100%;
+ }
+ .contact{
+    padding: 60px;
 
  }
  h2{
+    // padding: 20px;
     color: #CC005F;
-margin: 30px; 
+margin: 10px; 
 text-align: center;
 // margin-top: 60px;
 // margin-bottom: 60px;
-// height: 20vh;
+height: 5vh;
 font-size: 3rem;
+font-family:"Dancing Script", cursive;
 
  }
 
@@ -21,13 +28,17 @@ font-size: 3rem;
     // margin: 20px;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 
+}
+.test{
+    display: flex;
+    flex-direction: column;
 }
 .form-group{
     width: 100%;
     max-width: 650px;
-
+    
     // background-color: rgba(0, 0, 0, 0.1);
      padding: 4px;
      margin: 10px;
@@ -68,11 +79,21 @@ padding-top: 100px;
 }
 h3{
     color: #CC005F;
+    font-family: "Dancing Script", cursive;
 }
 h5{
     color: #CC005F;
+    font-family: "Dancing Script", cursive;
+
 }
 
 p{
     color: gray;
+
 }
+
+// @media screen and (min-width:500px) {
+//     .form-group{
+//         width: 70%;
+//     }
+// }
