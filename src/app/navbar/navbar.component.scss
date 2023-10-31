@@ -5,10 +5,11 @@
 
 .navbar {
   background-color: rgb(46, 46, 46) !important;
-  border-bottom: 1px;
 
   .navbar-brand {
-    font-size: x-large;
+    font-size: xx-large;
+    color: #cc005f;
+    line-height: normal !important;
   }
   div {
     gap: 1.5%;
@@ -17,18 +18,25 @@
   a {
     font-size: larger;
     color: white;
-    transition-duration: 500ms;
-    transition: 1200ms;
+    transition-duration: 300ms;
+    transition: 300ms;
+    line-height: 2;
   }
   .nav-link:hover {
     color: #cc005f;
-    // transform: rotate(360deg);
-    font-size: 25px;
+
+    font-size: 23px;
   }
   button {
     color: grey !important;
   }
   .navbar-toggler {
-    background-color: grey !important;
+    background-color: rgb(80, 80, 80) !important;
   }
+}
+.container-fluid {
+  padding-right: 16px;
+}
+#navbarNav {
+  justify-content: end;
 }
