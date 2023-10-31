@@ -1,7 +1,8 @@
 
-.container {
+.myContainer {
     background-color: rgb(46, 46, 46);
     color: white;
+    max-width: 100%;
 
     .content {
         margin-top: 4rem;
@@ -70,7 +71,7 @@
         }
 
         .thirdSection {
-            margin: 5rem 3rem;
+            margin: 5rem 3rem 0 3rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -96,31 +97,230 @@
                 }
             }
         } 
+    }
+}
 
-        // .info {
-        //     margin: 5rem 3rem;
+@media only screen and (max-width: 480px) {
+    
+        #s1{
 
-        //     h3 {
-        //         background-color: #CC005F;
-        //         color: black;
-        //         text-align: start;
-        //         padding: 1rem 2rem;
-        //         letter-spacing: 3px;
-        //         line-height: 1.2;
-        //         width: fit-content;
-        //         margin-bottom: 20px;
-        //     }
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
 
-        //     p {
-        //         text-align: start;
-        //         padding-left: 2rem;
-        //         letter-spacing: 3px;
-        //         color: #CC005F;
-        //     }
+            #pic1 {
+                width: 90vw;
+            }
 
-        //     .last {
-        //         padding-bottom: 2rem;
-        //     }
-        // }
+            #t1 {
+                text-align: center;
+                width: 90vw;
+            }
+        }
+
+        #s2 {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            #pic2 {
+                width: 90vw;
+                height: 400px;
+            }
+
+            #t2 {
+                text-align: center;
+                width: 90vw;
+            }
+        }
+
+        #s3 {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            #pic3 {
+                width: 90vw;
+                height: 400px;
+            }
+
+            #t3 {
+                text-align: center;
+                width: 90vw;
+            }
+        }
+}
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+        
+        #s1 {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            #pic1{
+                width: 480px;
+            }
+
+            #t1 {
+                text-align: center;
+                width: 100%;
+            }
+        }
+
+        #s2 {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            #pic2 {
+                width: 480px;
+                height: 400px;
+            }
+
+            #t2 {
+                text-align: center;
+                width: 100%;
+            }
+        }
+
+        #s3 {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            #pic3 {
+                width: 480px;
+                height: 400px;
+            }
+
+            #t3 {
+                text-align: center;
+                width: 100%;
+            }
+        }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+        
+        #s1 {
+            gap: 3.5rem;
+
+            #pic1 {
+                width: 45vw;
+            }
+
+            #t1 {
+                width: 45vw;
+            }
+        }
+
+        #s2 {
+            gap: 1rem;
+
+            #pic2 {
+                width: 45vw;
+            }
+
+            #t2 {
+                width: 40vw;
+            }
+        }
+
+        #s3 {
+            gap: 1rem;
+
+            #pic3 {
+                width: 45vw;
+            }
+
+            #t3 {
+                width: 40vw;
+            }
+        }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+
+        
+    #s1 {
+        gap: 7rem;
+
+        #pic1 {
+            width: 30rem;
+        }
+
+        #t1 {
+            width: 45vw;
+        }
+    }
+
+    #s2 {
+        gap: 3rem;
+
+        #pic2 {
+            width: 45vw;
+        }
+
+        #t2 {
+            width: 40vw;
+        }
+    }
+
+    #s3 {
+        gap: 3rem;
+
+        #pic3 {
+            width: 45vw;
+        }
+
+        #t3 {
+            width: 40vw;
+        }
+    }
+}
+
+@media screen and (min-width: 1201px) {
+
+        
+    #s1 {
+        gap: 7rem;
+
+        #pic1 {
+            width: 35rem;
+            height: 800px;
+        }
+
+        #t1 {
+            width: 45vw;
+        }
+    }
+
+    #s2 {
+        gap: 3rem;
+
+        #pic2 {
+            width: 45vw;
+        }
+
+        #t2 {
+            width: 40vw;
+        }
+    }
+
+    #s3 {
+        gap: 3rem;
+
+        #pic3 {
+            width: 45vw;
+        }
+
+        #t3 {
+            width: 40vw;
+        }
     }
 }
