@@ -1,1 +1,66 @@
-/*# sourceMappingURL=contact.component.css.map */
+body {
+  background-color: black;
+  height: 150vh;
+  padding: 50px;
+}
+
+h2 {
+  color: #CC005F;
+  margin: 30px;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-group {
+  width: 100%;
+  max-width: 650px;
+  padding: 4px;
+  margin: 10px;
+  border-radius: 60px;
+}
+
+.contact-btn {
+  text-decoration: none;
+  background-color: #CC005F;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  margin: 50px;
+  font-size: 1.1rem;
+  border-radius: 60px;
+  padding: 12px 22px;
+}
+
+.single-contact-btn {
+  text-align: center;
+  margin: 20px;
+  margin-top: 20px;
+}
+
+.contact-me {
+  padding: 100px;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-top: 100px;
+}
+
+h3 {
+  color: #CC005F;
+}
+
+h5 {
+  color: #CC005F;
+}
+
+p {
+  color: gray;
+}/*# sourceMappingURL=contact.component.css.map */

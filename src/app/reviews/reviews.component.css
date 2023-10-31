@@ -4,6 +4,24 @@
 
 body {
   margin: 3rem 0;
+  margin-bottom: 0;
+  padding: 3rem 0 0 0;
+  background-color: rgb(46, 46, 46);
+}
+body h2 {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-text-decoration: underline 3px #CC005F;
+          text-decoration: underline 3px #CC005F;
+  text-underline-offset: 8px;
+}
+body h2:hover {
+  -webkit-text-decoration: underline 3px rgba(201, 201, 201, 0.9450980392);
+          text-decoration: underline 3px rgba(201, 201, 201, 0.9450980392);
+  text-underline-offset: 8px;
+  cursor: pointer;
 }
 
 .body {
@@ -23,36 +41,49 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 50vh;
-  border-radius: 50px;
-  color: #fff;
+  border-radius: 3.125rem;
+  color: #000;
   cursor: pointer;
   flex: 0.5;
-  margin: 10px;
+  margin: 0.625rem;
   position: relative;
   transition: flex 0.7s ease-in;
 }
+.body .content .panel img {
+  border-radius: 50%;
+  width: 20%;
+  left: 2rem;
+  top: 2rem;
+  position: absolute;
+  opacity: 0;
+}
 .body .content .panel h3 {
-  font-size: 24px;
+  font-size: 1.5rem;
   width: 30%;
   position: absolute;
   bottom: 4rem;
   left: 2rem;
   margin: 0;
   opacity: 0;
+  margin-bottom: 0.5rem;
+  left: calc(30% + 2rem);
 }
 .body .content .panel p {
   width: 50%;
-  font-size: 20px;
+  font-size: 1.25rem;
+  font-style: italic;
   position: absolute;
   bottom: 0.5rem;
   left: 2rem;
   margin: 0;
   opacity: 0;
+  left: calc(30% + 2rem);
+  top: calc(4rem + 24px + 0.5rem);
 }
 .body .content .panel.activeClass {
   flex: 5;
 }
-.body .content .panel.activeClass h3, .body .content .panel.activeClass p {
+.body .content .panel.activeClass h3, .body .content .panel.activeClass p, .body .content .panel.activeClass img {
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
 }
@@ -63,16 +94,130 @@ body {
 }
 .clients div {
   padding: 3rem 0;
+  margin-bottom: 0;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 .clients div ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.clients div ul li:nth-child(2) {
+  padding-top: 1rem;
 }
 .clients div:nth-child(odd) {
-  background-color: rgba(255, 255, 255, 0.7607843137);
+  background-color: #fff;
 }
 .clients div:nth-child(even) {
-  background-color: rgba(255, 255, 255, 0.337254902);
+  background-color: rgba(201, 201, 201, 0.9450980392);
+}
+
+section h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .body .content .panel img {
+    border-radius: 50%;
+    width: 20%;
+    left: 2rem;
+    top: 2rem;
+    position: absolute;
+    opacity: 0;
+  }
+  .body .content .panel h3 {
+    font-size: 1.5rem;
+    width: 30%;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    margin: 0;
+    opacity: 0;
+    margin-bottom: 0.5rem;
+    left: calc(30% + 2rem);
+  }
+  .body .content .panel p {
+    width: 50%;
+    font-size: 1.25rem;
+    font-style: italic;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 2rem;
+    margin: 0;
+    opacity: 0;
+    left: calc(30% + 2rem);
+    top: calc(4rem + 24px + 0.5rem);
+  }
+  .body .content .panel .clients div {
+    padding: 1.5rem 0;
+  }
+}
+@media (max-width: 768px) and (min-width: 576px) {
+  .body .content .panel img {
+    border-radius: 50%;
+    width: 20%;
+    left: 2rem;
+    top: 2rem;
+    position: absolute;
+    opacity: 0;
+  }
+  .body .content .panel h3 {
+    font-size: 1.5rem;
+    width: 30%;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    margin: 0;
+    opacity: 0;
+    margin-bottom: 0.5rem;
+    left: calc(30% + 2rem);
+  }
+  .body .content .panel p {
+    width: 50%;
+    font-size: 1.25rem;
+    font-style: italic;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 2rem;
+    margin: 0;
+    opacity: 0;
+    left: calc(30% + 2rem);
+    top: calc(4rem + 24px + 0.5rem);
+  }
+  .body .content .panel .clients div {
+    padding: 1.5rem 0;
+  }
+}
+@media (max-width: 576px) {
+  .body .content .panel {
+    flex-direction: column;
+  }
+  .body .content .panel img {
+    display: none;
+  }
+  .body .content .panel h3 {
+    font-size: 1.5rem;
+    width: 90%;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    margin: 0;
+    opacity: 0;
+  }
+  .body .content .panel p {
+    left: 2rem;
+    width: 80%;
+  }
+  .clients {
+    display: block;
+  }
+  .clients div {
+    padding: 1.5rem 0;
+  }
 }/*# sourceMappingURL=reviews.component.css.map */

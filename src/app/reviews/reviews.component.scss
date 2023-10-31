@@ -4,6 +4,25 @@
 
 body {
     margin: 3rem 0;
+    margin-bottom: 0;
+    padding: 3rem 0 0 0;
+    background-color: rgb(46, 46, 46);
+    
+    h2 {
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: underline 3px #CC005F;
+        text-underline-offset: 8px;
+
+        &:hover {
+            text-decoration: underline 3px #c9c9c9f1;
+            text-underline-offset: 8px;
+            cursor: pointer;
+        }
+        
+    }
 }
 
 .body {
@@ -24,38 +43,52 @@ body {
             background-position: center;
             background-repeat: no-repeat;
             height: 50vh;
-            border-radius: 50px;
-            color: #fff;
+            border-radius: 3.125rem;
+            color: #000;
             cursor: pointer;
             flex: 0.5;
-            margin: 10px;
+            margin: 0.625rem;
             position: relative;
             transition: flex 0.7s ease-in;
 
+            img {
+                border-radius: 50%;
+                width: 20%;
+                left: 2rem;
+                top: 2rem;
+                position: absolute;
+                opacity: 0;
+
+            }
+
             & h3 {
-                font-size: 24px;
+                font-size: 1.5rem;
                 width: 30%;
                 position: absolute;
                 bottom: 4rem;
                 left: 2rem;
                 margin: 0;
                 opacity: 0;
+                margin-bottom: 0.5rem;
+                left: calc(30% + 2rem);
             }
             & p {
                 width: 50%;
-                font-size: 20px;
+                font-size: 1.25rem;
+                font-style: italic;
                 position: absolute;
                 bottom: 0.5rem;
                 left: 2rem;
                 margin: 0;
                 opacity: 0;
+                left: calc(30% + 2rem);
+                top: calc(4rem + 24px + 0.5rem);
             }
 
             &.activeClass {
                 flex: 5;
-                //border-radius: 50px;
 
-                & h3, p {
+                & h3, p, img {
                     opacity: 1;
                     transition: opacity 0.3s ease-in 0.4s; 
                 }
@@ -72,26 +105,158 @@ body {
 
     div {
         padding: 3rem 0;
+        margin-bottom: 0;
         align-items: center;
         justify-content: center;
         text-align: center;
 
         ul{
             list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li:nth-child(2) {
+                padding-top: 1rem;
+            }
         };
 
+
         &:nth-child(odd) {
-            background-color: #ffffffc2;
+            background-color: #fff;
         }
         &:nth-child(even) {
-            background-color: #ffffff56;
+            background-color: #c9c9c9f1;
         }
-    };
+    }
 
-    // div.odd {
-    //     background-color: #ffffffc2;
-    // };
-    // .even {
-    //     background-color: #ffffff56;
-    // }
+}
+
+section h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+
+@media (max-width: 992px) and (min-width: 768px) {
+    .body .content .panel {
+        img {
+        border-radius: 50%;
+        width: 20%;
+        left: 2rem;
+        top: 2rem;
+        position: absolute;
+        opacity: 0;
+
+    }
+
+    & h3 {
+        font-size: 1.5rem;
+        width: 30%;
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+        margin: 0;
+        opacity: 0;
+        margin-bottom: 0.5rem;
+        left: calc(30% + 2rem);
+    }
+    & p {
+        width: 50%;
+        font-size: 1.25rem;
+        font-style: italic;
+        position: absolute;
+        bottom: 0.5rem;
+        left: 2rem;
+        margin: 0;
+        opacity: 0;
+        left: calc(30% + 2rem);
+        top: calc(4rem + 24px + 0.5rem);
+    }
+    
+    .clients {
+        div {
+            padding: 1.5rem 0;
+        }
+    }
+}
+}
+
+
+@media (max-width: 768px) and (min-width: 576px) {
+
+    .body .content .panel {
+        img {
+        border-radius: 50%;
+        width: 20%;
+        left: 2rem;
+        top: 2rem;
+        position: absolute;
+        opacity: 0;
+
+    }
+
+    & h3 {
+        font-size: 1.5rem;
+        width: 30%;
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+        margin: 0;
+        opacity: 0;
+        margin-bottom: 0.5rem;
+        left: calc(30% + 2rem);
+    }
+    & p {
+        width: 50%;
+        font-size: 1.25rem;
+        font-style: italic;
+        position: absolute;
+        bottom: 0.5rem;
+        left: 2rem;
+        margin: 0;
+        opacity: 0;
+        left: calc(30% + 2rem);
+        top: calc(4rem + 24px + 0.5rem);
+    }
+    
+    .clients {
+        div {
+            padding: 1.5rem 0;
+        }
+    }
+}
+}
+@media (max-width: 576px) {
+    .body .content .panel {
+        flex-direction: column;
+
+        & img {
+            display: none;
+        }
+
+        & h3 {
+            font-size: 1.5rem;
+            width: 90%;
+            position: absolute;
+            bottom: 2rem;
+            left: 2rem;
+            margin: 0;
+            opacity: 0;
+        }
+
+        & p {
+            left: 2rem;
+            width: 80%;
+        }
+    }
+
+    .clients {
+        display: block;
+        div {
+            padding: 1.5rem 0;
+        }
+    }
 }
