@@ -346,3 +346,20 @@
         }
     }
 }
+
+
+#go-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    a {
+        display: block;
+        font-size: 24px;
+        color: #FFFFFF;
+        background-color: #CC005F;
+        padding: 10px;
+        &:hover {
+            background-color: #555555;
+        }
+    }
+}
