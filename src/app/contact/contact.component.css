@@ -1,20 +1,30 @@
 body {
-  background-color: black;
-  height: 150vh;
-  padding: 50px;
+  background-color: rgb(46, 46, 46);
+  height: 145vh;
+}
+
+.contact {
+  padding: 60px;
 }
 
 h2 {
   color: #CC005F;
-  margin: 30px;
+  margin: 10px;
   text-align: center;
+  height: 5vh;
   font-size: 3rem;
+  font-family: "Dancing Script", cursive;
 }
 
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
 }
 
 .form-group {
@@ -55,10 +65,12 @@ h2 {
 
 h3 {
   color: #CC005F;
+  font-family: "Dancing Script", cursive;
 }
 
 h5 {
   color: #CC005F;
+  font-family: "Dancing Script", cursive;
 }
 
 p {
