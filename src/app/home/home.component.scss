@@ -396,11 +396,12 @@
             width: 100%;
             height: auto;
 			background: rgba(46, 46, 46);
-			opacity: .70;
+			opacity: .90;
             }
 
             .carousel-caption {
                 position: absolute;
+                text-shadow: 1px 1px 2px #000;
                 padding-top: 5rem;
                 top: 40%;
                 left: 50%;
